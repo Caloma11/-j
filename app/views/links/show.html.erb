@@ -1,7 +1,7 @@
 <div class="row justify-content-center vw-100">
   <div class="border bg-white vh-50 w-50 my-5 rounded p-4">
     <h2>Your link is:</h2>
-    <p> <%= link_to go_url(@link.slug), go_url(@link.slug) %> </p>
+    <p> <%= link_to go_url(@link.slug), go_url(@link.slug), target: :_blank %> </p>
     <%= link_to 'Back', root_path %>
   </div>
 </div>
