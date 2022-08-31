@@ -5,7 +5,7 @@ class Link < ApplicationRecord
   validates :slug, uniqueness: true
   validates_format_of :slug, with: /\A\w+\z/
 
-  before_validate :check_slug
+  before_validation :check_slug
 
   def check_slug
     if slug.empty? || slug.nil?
